@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"content="壬生町にあるリラックスできる歯科医院はいかがですか？">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大阿久歯科医院</title>
+    <link rel="icon" href="./images/歯周病アイコン.png">
+    <!-- リセット -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=GFS+Didot&family=IBM+Plex+Sans+JP:wght@500&family=Kiwi+Maru&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- リンク -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+      <!-- ヘッダー -->
+      <header class="header">
+        <div class="inner">
+            <h1 class="logo"><img src="./images/歯科医のアイコン2.png" alt="歯科医のアイコン">大阿久歯科医院</h1>
+
+            <nav>
+                <div class="nav-button">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+
+           
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="index.html">ホーム</a></li>
+                        <li class="nav-item"><a href="about.html">私たちについて</a></li>
+                        <li class="nav-item"><a href="plan.html">診療内容</a></li>
+                        <div class="button">
+                        <li class="nav-item"><a href="#">WEB予約</a></li>
+                        </div>
+                    </ul>
+               </nav>
+        </div>
+    </header>
+    
+    
+    <!-- メイン -->
+    <main>
+        <div class="container">
+            <div class="main-img">
+                <img src="./images/yoyaku.png"class="plan-img" alt="施術室">
+            </div>
+            <h2 class="img-title">
+              予約
+            </h2>
+        </div>
+
+        <section class="infomation inner">
+            <div class="info-box">
+                <h2 class="contact-tile">予約フォーム</h2>
+                
+                <div class="info-text">
+                    <h3 class="info-title">初診の方へ</h3>
+                    <p>初めてのご来院の方は、以下の内容をご確認いただき、必要なものをご準備ください</p>
+                    <ul>
+                        <li>保険証のお持ちの方は、必ずご持参ください。。</li>
+                        <li>お薬手帳や診療情報提供書があればご持参ください。</li>
+                        <li>予診票を事前に記入していただくと、スムーズに診療を受けていただけます。</li>
+                    </ul>
+                <p>ご不明点があれば、お気軽にお問い合わせください。</p>
+                </div>
+            </div>
+
+            <form action="#"method="POST">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required placeholder="お名前を入力してください">
+               
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required placeholder="メールアドレスを入力してください">
+            
+                    <label for="phone">電話番号</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="電話番号を入力してください">
+        
+                    <label for="appointment-date">希望予約日時</label>
+                    <input type="datetime-local" id="appointment-date" name="appointment-date" required>
+             
+
+                <div class="form-box">
+                    <label>希望科目（複数選択可）</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="subject[]" value="むし歯">むし歯</label>
+                        <label><input type="checkbox" name="subject[]" value="小児歯科・小児矯正">小児歯科</label>
+                        <label><input type="checkbox" name="subject[]" value="ホワイトニング（自費治療）">ホワイトニング</label>
+                        <label><input type="checkbox" name="subject[]" value="口腔外科">口腔外科</label>
+                        <label><input type="checkbox" name="subject[]" value="歯周病治療">歯周病治療</label>
+                        <label><input type="checkbox" name="subject[]" value="矯正歯科（マウスピース）">矯正歯科</label>
+                        <label><input type="checkbox" name="subject[]" value="予防歯科">予防歯科</label>
+                        <label><input type="checkbox" name="subject[]" value="インプラント治療">インプラント治療</label>
+                    </div>
+                </div>
+
+                <div class="form-box">
+                    <label>初診・再診</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="new-patient-confirmaion" value="確認済み">初診</label>
+                        <label><input type="checkbox" name="new-patient-confirmaion" value="確認済み">再診</label>
+                    </div>
+                </div>
+
+                <div class="form-box">
+                    <label for="message">ご要望・ご質問</label>
+                    <textarea id="message" name="message" rows="5" placeholder="ご要望・ご質問があればご記入ください"></textarea>
+                </div>
+
+                <input type="submit" value="予約を送信">
+            </form>
+        </section>
+  
+    <!-- access -->
+    <section class="access inner">
+        <div class="access-bgc"></div>
+            <h3 class="access-title"><span>ACCESS</span></h3>
+            <div class="access-flex"><!-- flex -->
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6418.37260929516!2d139.82044807625763!3d36.453053687190675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601f4371ea2fd65f%3A0xc9ad6cbe58d44468!2z44CSMzIxLTAyMTcg5qCD5pyo55yM5LiL6YO96LOA6YOh5aOs55Sf55S66Iez5a6d77yR5LiB55uu77yT4oiS77yU77yQ!5e0!3m2!1sja!2sjp!4v1736256182703!5m2!1sja!2sjp"
+                 width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                 <div class="accesslist">
+                    <h5 class="list-title"><span>大阿久歯科医院</span></h5>
+                    <p>
+                        〒321-0217 栃木県下都賀郡壬生町至宝1-3-40<br>
+                        東武線　国谷駅から徒歩5分
+                    </p>
+
+                    <div class="karender">
+                        <img src="./images/Group 3.png" alt="">
+                    </div>
+                
+                  
+                 </div>
+            </div><!-- flex -->
+    </section>
+    </main>
+
+
+       
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <h1 class="logo"><img src="./images/歯科医のアイコン2.png" alt="歯科医のアイコン">大阿久歯科医院</h1>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">私たちについて</a></li>
+                    <li><a href="plan.html">診療内容</a></li>
+                </ul>
+            </div>
+
+            <div class="copy">&copy; OOAKU DENTAL CLINIC</div>
+        </footer>
+
+        <div class="pagetop">
+            <a href="#">
+            Top
+            </a>
+        </div>
+   
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="./script.js"></script>
+       
+    </body>
+</html>

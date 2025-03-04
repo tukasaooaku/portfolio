@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#000;
+    color:#fff;
+    font-family: "Notosans","Macondo Swash Caps","Agbalumo","Notosans";
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+li {
+    list-style: none;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*header*/
+header {
+   width:100%;
+   height: 100px;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#3D3A3A;
+}
+
+header .inner {
+    height:100%;
+    margin:0 auto;
+    padding:0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .barger {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width:50px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+
+
+
+
+header .nav a {
+    display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .nav.open {
+    right: 0;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+header nav li {
+    margin-right: 50px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color:#fff;
+    transition: 0.3s;
+}
+
+header nav ul a:hover {
+    color:#F15400;
+} 
+
+.fixed {
+    position: fixed;
+    height:100px;
+    background-color: hsla(0, 0%, 28%, 0.95);
+}
+
+/*main*/
+.mv {
+    width:100%;
+    height:100vh;
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.main-item {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    animation: img-change 15s infinite;
+    opacity: 0;
+}
+
+.main-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.main-item:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.main-item:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.main-item img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes img-change {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+main .title-box {
+    position: absolute;
+    top:50%;
+    left:40%;
+}
+
+main .main-title {
+    font-size: clamp(2rem,5vw,3rem);
+}
+
+main span {
+    color:#F15400;
+}
+
+main .main-text {
+    font-size:1.25rem ;
+}
+
+.item-box {
+    width:30%;
+    margin-right: 50px;
+}
+
+/*about*/
+.slider-flex {
+    display: flex;
+}
+
+.title {
+    font-size:1.5rem ;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about {
+    background-color: #3d3d3d;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.about .about-item {
+    margin-bottom: 60px;
+}
+
+.about .text-title {
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about .text-box {
+    line-height: 2;
+  margin-bottom: 60px;
+}
+
+
+/*service*/
+
+#service {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#service .service-title {
+    font-size: 1.5rem;
+    padding-bottom:15px;
+}
+
+.service-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.service-flex p {
+    line-height: 2;
+}
+
+/*drink*/
+#drink {
+    background-image: url(./images/drink1\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    padding-bottom:50px;
+    object-fit: cover;
+}
+
+#drink .haikei {
+    width:100%;
+}
+
+#drink .drink-title {
+        font-size:1.5rem ;
+        text-align: center;
+        margin-bottom: 60px;
+        padding-top:50px ;
+ }
+
+ #drink .img-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+ }
+
+ #drink .item-flex {
+    display: flex;
+ }
+
+ #drink .drink-text {
+    padding:30px 60px ;
+ }
+
+ #drink .text-title {
+    font-size:1.25rem ;
+    margin-bottom: 40px;
+ }
+
+ #drink .menu-list {
+    margin-bottom:40px ;
+ }
+
+ /*plan*/
+ #service .plan-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+ }
+
+ #service .planmenu {
+    font-size:1rem;
+    margin-bottom: 10px;
+ }
+
+
+  /*contact*/
+
+ #contact {
+    height:750px;
+    background-image: url(./images/drink1\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+ }
+
+ #contact .title {
+    font-size:1.25rem ;
+        text-align: center;
+        margin-bottom: 60px;
+        padding-top:50px ;
+ }
+
+ .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #F15400 ;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #943705;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #F15400;
+}
+
+.privacy-agreement a {
+    text-decoration: none;
+    color:#fff;
+}
+
+
+
+ /*footer*/
+ #footer {
+    background-color: #3D3A3A;
+ }
+
+ #footer .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 
+ }
+
+ #footer .footer-name {
+    font-size: clamp(1rem,5vw,1.25rem);
+    margin-bottom: 10px;
+ }
+
+
+#footer .button {
+    text-align: center;
+}
+
+ #footer li {
+    font-size:1.25rem ;
+ }
+
+ #footer li:nth-child(2) {
+    margin-bottom: 10px;
+ }
+
+ #footer li:nth-child(3) {
+    margin-bottom: 10px;
+ }
+
+ #footer .copy {
+    text-align: center;
+ }
+
+ /*TOP*/
+.pagetop {
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: .3s;
+    background-color:#ff9b65;
+}  
+
+.pagetop a {
+    color:#fff;
+}
+
+
+.pagetop:hover {
+    box-shadow: 0 0 10px #fddfce;
+}
+
+
+@media screen and (max-width:730px) {
+ .item-flex {
+    flex-direction: column;
+ }
+
+ header nav ul {
+flex-direction: column;
+}
+
+header nav ul a {
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+ header .nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    right: -120%;
+    background-color: #333333;
+    padding: 50px 0;
+    transition: all 0.6s ease;
+    border-top: 1px solid #fff;
+    z-index:600;
+}
+
+.barger  span,
+.barger  span::after,
+.barger  span::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.6s ease;
+}
+
+.barger  span::before {
+    top: -10px;
+  }
+  .barger  span::after {
+    bottom: -10px;
+  }
+  .barger.open span {
+    background-color: transparent;
+  }
+  .barger.open span::before {
+    top: 0;
+    transform:rotate(-315deg);
+  }
+  .barger.open span::after {
+    bottom: 0;
+    transform:rotate(315deg);
+  }
+
+}
+
+@media screen and (max-width:530px) {
+    .service-flex {
+    flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:376px) {
+    .slider-flex {
+        flex-direction: column;
+    }
+
+    .item-box {
+        width: 100%;
+    }
+
+    main .title-box {
+        position: absolute;
+        top:50%;
+        left:10%;
+    }
+
+    header nav li {
+        padding:20px;
+    }
+    
+ #drink .img-list {
+    grid-template-columns: repeat(1,1fr);
+ }
+}
+
+@media screen and (max-width:490px) {
+    .footer-flex {
+        flex-direction: column;
+     }
+
+     .footer-logo {
+        margin-bottom: 20px;
+     }
+
+     
+    }
+
+
+    
+ 
+  
