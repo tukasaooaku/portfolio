@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"content="WEBコーダー・フロントエンドエンジニアを目指す
+    ">
+    <link rel="icon" href="./images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tukasa Oaku Portforio</title>
+<!-- googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Diphylleia&family=M+PLUS+Rounded+1c:wght@100;300;500;800;900&family=Macondo+Swash+Caps&family=Noto+Sans:ital,
+    wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,
+    wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Diphylleia&family=M+PLUS+Rounded+1c:wght@100;300;500;800;900&family=Macondo+Swash+Caps&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=
+    Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- リンク -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="mouse-stalker"></div>
+<!-- ヘッダー -->
+     <header id="header">
+            <h2 class="header-logo"><a href="#"><span>My Portfolio</span></a></h2>
+
+            <div class="hamburger"><!-- ハンバーガーボタン -->
+                <span></span>
+            </div>
+
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#title-box">WORKS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><div class="header-button"><a href="#footer">CONTACT</a></div></li>
+                </ul>
+            </nav>
+    </header>
+
+     <main>
+        <!-- メインコンテント -->
+        <div class="main container">
+            <div class="main-flex">
+                <h1 class="main-title">
+                    WELCOME To<br>
+                    <span>Tukasa Oaku</span> <br>
+                    Portfolio
+                </h1>
+                <picture>
+                    <source srcset="./images/mediimg.png" media="(max-width: 376px)">
+                    <img src="./images/ooakuimg.png" alt="大阿久　司ポートフォリオ">
+                </picture>
+            </div>
+
+            <div id="scroll-container"><!-- スクロール -->
+                <p id="scroll-text">scroll</p>
+                <div id="arrow">↓</div>
+            </div>
+        </div>
+
+    <!-- works -->
+        <div class="sec"><!-- 縦書きてきすと -->
+            <div class="vertical-text">WORKS</div>
+        </div>
+
+        <section id="title-box">
+            <h3 class="WORKS-title">WORKS</h3>
+
+            <div class="mockup-flex container"><!-- モックアップ画像配置 -->
+                <div class="mockup-item">
+                    <a href="worksooaku.html">
+                        <img src="./images/portfolioimg.png" alt="大阿久ポートフォリオモックアップ">
+                        <h4 class="mockup-title"> <span>ポートフォリオサイト</span></h4>
+                    </a>
+                    <p>HTML＆CSS / Javasript </p>
+                </div>
+
+                <div class="mockup-item">
+                    <a href="sika.html">
+                        <img src="./images/sikaiin.png" alt="歯科医院サイトモックアップ">
+                        <h4 class="mockup-title"> <span>架空歯科医院サイト</span></h4>
+                    </a>
+                    <p>HTML＆CSS / Javasript </p>
+                </div>
+
+                <div class="mockup-item">
+                    <a href="cafe.html">
+                        <img src="./images/cafeimg.png" alt="カフェサイトモックアップ">
+                        <h4 class="mockup-title"> <span>架空カフェサイト</span></h4>
+                    </a>
+                    <p>HTML＆CSS / Javasript </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="sec"><!-- 縦書きてきすと -->
+            <div class="vertical-text2">ABOUT</div>
+        </div>
+
+     <!-- about -->
+        <section id="about">
+            <h3 class="about-title">ABOUT</h3>
+            <div class="about-flex container">
+               <div class="boximg">
+                    <picture>
+                        <source srcset="./images/aboutmed.png" media="(max-width: 376px)">
+                        <img src="./images/aboutooakuimg.png" alt="大阿久　司写真">
+                    </picture>
+               </div>
+
+               <div class="boximg2">
+                    <div class="name-flex">
+                        <h4 class="myname">大阿久　司</h4>
+                        <p>おおあく　つかさ</p>
+                    </div>
+                    <p>ポートフォリオをご覧いただきありがとうございます。<br>
+                        1998年5月、栃木県出身で前職は医療事務で医療業務の他に請求業務やチラシ、ポスター作成、自費治療の営業など
+                        幅広く担当していました。<br>チームで活動しながら見る人にとって何かの一歩に勇気を与えられるWEB制作に関心を持ち
+                        職業訓練校に入学しWEB制作について学びました。<br>
+                        現在、WEBコーダー・フロントエンドエンジニアになるため就職活動中です。
+                    </p>
+                    <div class="about-btn"><a href="about.html">MORE</a></div>
+               </div>
+            </div>
+       </section>
+
+       <!-- skill -->
+        <div class="sec"><!-- 縦書きてきすと -->
+            <div class="vertical-text3">SKILL</div>
+        </div>
+
+    <section id="skill">
+        <h3 class="skill-title">SKILL</h3>
+        <div class="skill-flex container">
+            <div class="left-box"><!-- 左側のボックス -->
+                <h5 class="item-title"><span> 01　WEBデザイン</span></h5>
+                <p>WEBサイト/バナー/ロゴ/モックアップ</p>
+               
+                <div class="item-flex">
+                   <div class="item-img">
+                     <img src="./images/illustrator_5968472 1 1.png" alt="イラストレーターのアイコン">
+                   </div>
+
+                   <div class="item-img">
+                    <img src="./images/photoshop_5968520 1.png" alt="フォトショップのアイコン">
+                  </div>
+
+                  <div class="item-img">
+                    <img src="./images/figma_5968705 1.png" alt="figmaのアイコン">
+                  </div>
+                </div>
+
+                <p>UI・UXを考慮したWebサイト・LP・バナーなどのグラフィックデザインをつくります。<br>
+                    シンプルで見やすいものにこだわり、ターゲットユーザーの行動につながるような情報設計
+                    や機能性にも配慮し、人の心を動かせるようなデザインを目指しています。
+                </p>
+            </div>
+
+            <!-- 右側のボックス -->
+            <div class="right-box">
+                <h5 class="item-title"><span> 02　実装</span></h5>
+                <p>コーディング/ワードプレス</p>
+               
+
+                <div class="item-flex">
+                   <div class="item-img">
+                     <img src="./images/html-5_5968267 1.png" alt="htmlのアイコン">
+                   </div>
+
+                   <div class="item-img">
+                    <img src="./images/css-3_5968242 1.png" alt="cssのアイコン">
+                  </div>
+
+                  <div class="item-img">
+                    <img src="./images/js_5968292 1.png" alt="javascriptのアイコン">
+                  </div>
+
+                  <div class="item-img">
+                    <img src="./images/illustrator_5968472 1 1.png" alt="ワードプレスのアイコン">
+                  </div>
+                </div>
+
+                <p>デザインカンプを忠実に再現することと、<br>
+                    ユーザーにとって利用しやすいよう機能性を重視するのと同時に<br>
+                    管理のしやすさを意識することを心がけております。
+                </p>
+            </div>
+        </div>
+   </section>
+</main>
+ 
+    <!-- フッター -->
+    <footer id="footer">
+        <div class="container">
+            <div class="contact-box">
+                <h3 class="footer-title">contact</h3>
+
+                <form action="#" method="POST" class="contact-form">
+                    <label for="name">名前</label>
+                    <input type="text" id="name" name="name" placeholder="お名前を入力してください" required>
+        
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" placeholder="メールアドレスを入力してください" required>
+        
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="4" placeholder="メッセージを入力してください" required></textarea>
+                    
+                     <!-- プライバシー同意チェックボックス -->
+                    <div class="privacy-agreement">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">
+                            <a href="#" target="_blank">プライバシーポリシーの同意はこちら</a>
+                        </label>
+                    </div>
+
+                    <button type="submit">送信</button>
+                </form>
+            </div>
+ 
+            <p class="footer-copyright">
+                All Rights Reserved 2025 © Tukasa ooaku
+            </p>
+        </div>
+
+        <button id="back-to-top" class="back-to-top">トップ</button>
+    </footer>
+   
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body> 
+</html>
